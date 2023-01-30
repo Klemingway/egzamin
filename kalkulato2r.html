@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styl2.css">
+    <link rel="shortcut icon" href="img/ikonna.png" type="image/x-icon">
+    <script src="js/script.js"></script>
+    <title>Bankowy</title>
+</head>
+
+<body onload="zaawansowane()">
+    <header>
+
+        <div id="hod">
+            <a style="text-decoration: none;color: white;" href="index.html">Główna</a>
+            <a style="text-decoration: none;color: white;" href="kalkulator.html">Kalkulator</a> &puncsp;
+            <div id="hod1"><a style="text-decoration: none; color: white;" href="bl.html">O nas</a></div>
+        </div>
+        <div id="hzd">
+            <b>Upo</b>Code®
+        </div>
+    </header>
+    </script>
+
+    <div id="okno">
+
+        <div id="tabela">
+            <div class="tab">
+
+
+                <table>
+                    <tbody id="tabelka">
+                        <tr>
+                            <td>Kwota kredytu (zł)</td>
+                            <td><input type="text" name="kwota" pattern="[0-9]" id="kwota" class="wej" value="20000" onchange="document.getElementById('r1').value = this.value/1000"></td>
+                            <td>Okres spłaty (mies.)</td>
+                            <td><input type="text" name="splata" pattern="[0-9]" id="splata" class="wej" value="24" onchange="document.getElementById('r2').value = this.value"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <input type="range" min="1" max="150" value="20" id="r1" class="slider" oninput="document.getElementById('kwota').value = this.value*1000; ">
+                            </td>
+                            <td colspan="2" style="text-align: center;">
+                                <input type="range" min="12" max="120" value="24" id="r2" class="slider" oninput="document.getElementById('splata').value = this.value;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Oprocentowanie(procent)</td>
+                            <td><input type="text" name="splata" pattern="[0-9]" id="oproc" class="wej" value="9" onchange="document.getElementById('r3').value = this.value*100"></td>
+                            <td>Prowizja(procent)</td>
+                            <td><input type="text" name="prowiz" pattern="[0-9]" id="prowiz" class="wej" value="5" onchange="document.getElementById('r4').value = this.value"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <input type="range" min="1" max="1500" value="900" id="r3" class="slider" oninput="document.getElementById('oproc').value = this.value/100;">
+                            </td>
+                            <td colspan="2" style="text-align: center;">
+                                <input type="range" min="0" max="20" value="5" id="r4" class="slider" oninput="document.getElementById('prowiz').value = this.value;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <br>
+                                <label>
+                                <input type="radio" checked name="choice" value="wariant1" class="radio">
+                                Prowizja wliczana w koszt kredytu
+                                </label>
+                            </td>
+
+                            <td colspan="2" style="text-align: center;">
+                                <br>
+                                <label>
+                                    <input type="radio" name="choice" value="wariant2" class="radio">
+                                    Prowizja wliczana osobno
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="advanced" colspan="4">
+                                <br>
+                                <a onclick="zaawansowane()" style="margin-bottom: 100px;">zaawansowane v</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div id="guzik">
+            <input type="button" id="guzior" value="Oblicz ratę i koszt" onclick="test()">
+        </div>
+    </div>
+    <div id="wyniki">
+        <input type="button" onclick="test()" id="guzior1" value="pokaż harmonogram rat">
+    </div>
+    <div id="dwd">
+        <div id="wyniki2">
+        </div>
+    </div>
+
+
+    <div id="rownanie">
+
+        <div id="dwd2">
+            <div id="zrodlaList">
+                Nasze źródła i inspiracje :D
+                <a href="https://finanse.rankomat.pl/kalkulatory/kalkulator-kosztu-kredytu/">https://finanse.rankomat.pl/kalkulatory/kalkulator-kosztu-kredytu/</a><br>
+                <a href="https://direct.money.pl/kalkulatory/kalkulator-kredytowy">https://direct.money.pl/kalkulatory/kalkulator-kredytowy</a><br>
+                <a href="https://www.bankoweabc.pl/2021/04/05/jak-obliczyc-rate-kredytu/">https://www.bankoweabc.pl/2021/04/05/jak-obliczyc-rate-kredytu/</a><br>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <footer>
+        <div id="zawfoot">
+            <h3>UpoCode®</h3>
+            <p>Wykonawcy: <span>Mateusz Kowalczyk</span>, <span>Marcin Mularczyk</span><br>2l.2022</p>
+
+        </div>
+        <div class="dol">
+            <p>Orzeszki ziemne w chrupiącej panierce o smaku słodko-pikantnym, prażone
+                <span id="zrodla"><img id="zrodlaImg" src="img/ikonna.png" onmouseover="pokaz1()"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

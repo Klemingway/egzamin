@@ -1,0 +1,292 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    background-color: #222222;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 136, 0);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 136, 0, 0.582);
+}
+
+
+/* header */
+
+header {
+    z-index: 5;
+    text-decoration: none;
+    padding-top: 0.5em;
+    position: sticky;
+    top: 0;
+    height: 5vh;
+    background-color: #1d92ff;
+    width: 100vw;
+    font-size: 20px;
+}
+
+#hzd {
+    font-size: 1.2em;
+    padding-left: 10px;
+    background-color: #1d92ff;
+}
+
+#hod {
+    float: right;
+    word-spacing: 20px;
+    margin-right: 2vw;
+}
+
+#hod1 {
+    float: right;
+    word-spacing: 0px;
+}
+
+#fw {
+    position: relative;
+    margin-top: 20px;
+}
+
+
+/* koniec headera */
+
+#gl {
+    padding-top: 1.5em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    justify-content: center;
+    background-color: #111111;
+    color: white;
+    margin: 1.5em;
+    min-height: 20vh;
+}
+
+
+/* #d1 {
+    background-color: aqua;
+}
+
+#d2 {
+    background-color: brown;
+}
+
+#d3 {
+    background-color: olive;
+}
+
+#d4 {
+    background-color: orangered;
+} */
+
+#gll {
+    background-color: #ff5000;
+    width: 100%;
+    height: auto;
+    border: #ff5000 1px solid;
+}
+
+.dradio {
+    font-size: 20px;
+    padding-top: 5px;
+    width: 100%;
+    margin-bottom: 1em;
+    /* background-color: gold; */
+}
+
+#l1 {
+    float: left;
+}
+
+#l2 {
+    float: right;
+}
+
+#d6 {
+    font-size: 20px;
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+    /* background-color: rgb(0, 255, 115); */
+}
+
+#d7 {
+    margin: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.d {
+    word-wrap: break-word;
+    font-size: 2em;
+    padding: 2px;
+    width: 50%;
+    float: left;
+    min-height: 13vh;
+    padding-right: 4em;
+}
+
+#wyniki {
+    min-height: 25em;
+    margin-bottom: 3em;
+}
+
+
+/* wejscia wyjscia */
+
+.wej {
+    float: right;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    font-family: monospace;
+    height: 3em;
+    width: 9em;
+    font-size: 15px;
+}
+
+.slider {
+    margin: 10px;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 3px;
+    height: 0.6vh;
+    width: 21vw;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 3px 3px 6px rgb(89, 88, 92), inset 1px 1px 1px #313131;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    background-color: rgb(168, 111, 5);
+    overflow: visible;
+    border-radius: 5px;
+}
+
+#guzik {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 24px;
+    border: 0;
+    color: #fff;
+    background: #ff5000;
+    line-height: 1.15;
+    font-size: 16px;
+}
+
+#guzik:hover {
+    transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1d92ff;
+}
+
+
+/* footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vW;
+    font-family: monospace;
+    padding-top: 20px;
+    color: white;
+}
+
+#zawfoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#zawfoot h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+#zawfoot p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dol {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.dol p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+#zawfoot span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+/* koniec footera */
+
+@media (max-width: 650px) {
+    .d {
+        padding-right: 1em;
+        width: 100%;
+        padding-bottom: 0;
+        margin-bottom: 1.5em;
+    }
+    .slider {
+        width: 100%;
+    }
+    .wej {
+        width: 100%;
+    }
+    #gl {
+        padding: 1em;
+    }
+    footer {
+        position: relative;
+    }
+    #d5 {
+        text-align: center;
+    }
+}
